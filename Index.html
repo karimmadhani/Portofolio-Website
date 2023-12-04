@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Karim Madhani</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="shortcut icon" href="dist/img/logo.gif" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header
+      class="absolute left-0 top-0 z-50 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a
+              href="#home"
+              class="text-md flex items-center py-6 font-semibold text-primary"
+              ><img src="dist/img/logo.gif" alt="logo" class="mr-2 w-7" />Ahmad
+              Karim Madhani</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <nav
+              id="navMenu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    class="active mx-8 flex py-2 text-base text-dark transition duration-300 ease-in-out group-hover:text-primary"
+                    href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    class="mx-8 flex py-2 text-base text-dark transition duration-300 ease-in-out group-hover:text-primary dark:text-white"
+                    href="#about"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    class="mx-8 flex py-2 text-base text-dark transition duration-300 ease-in-out group-hover:text-primary dark:text-white"
+                    href="#portofolio"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    class="mx-8 flex py-2 text-base text-dark transition duration-300 ease-in-out group-hover:text-primary dark:text-white"
+                    href="#contact"
+                    >Contact</a
+                  >
+                </li>
+                <li class="flex items-center pl-8">
+                  <input type="checkbox" class="hidden" id="dark-toogle" />
+                  <label for="dark-toogle">
+                    <div
+                      class="flex h-5 w-9 cursor-pointer items-center rounded-full border border-slate-500 bg-slate-100 p-[2px] dark:border-white dark:bg-slate-600"
+                    >
+                      <div
+                        class="toogle-circle h-4 w-4 rounded-full border border-slate-500 bg-amber-200 transition duration-300 ease-in-out dark:bg-white"
+                      ></div>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pb-24 pt-36 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="hAtas text-base font-semibold text-primary md:text-lg">
+              Saya,
+              <span
+                class="mt-1 block text-3xl font-bold text-dark dark:text-white lg:text-4xl"
+              >
+                Ahmad Karim Madhani
+              </span>
+            </h1>
+            <h2
+              class="mb-5 font-medium text-secondary dark:text-slate-400 lg:text-lg"
+            >
+              Web Developer
+            </h2>
+            <p
+              class="pNaik mb-10 text-justify font-medium leading-relaxed text-slate-600 dark:text-slate-400"
+            >
+              Membangun berbagai jenis aplikasi web yang dapat digunakan oleh
+              berbagai user
+            </p>
+            <div class="aNaik m-0 p-0">
+              <a
+                href="#contact"
+                class="-mx-1 rounded-full bg-primary px-3 py-3 font-semibold text-white transition duration-300 ease-in-out hover:opacity-75 hover:shadow-lg dark:bg-sky-600"
+                >Hubungi saya</a
+              >
+            </div>
+          </div>
+          <div class="ftKanan z-10 w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-4 lg:right-0 lg:mt-0">
+              <img
+                src="dist/img/profile.png"
+                alt="Ahmad Karim Madhani"
+                class="mx-auto max-w-full"
+              />
+              <span class="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2"
+                ><svg
+                  width="350"
+                  height="300"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-primary dark:fill-sky-600"
+                >
+                  <path
+                    d="M46,-79.8C58.9,-72.2,68,-58.4,72.9,-44.1C77.8,-29.7,78.3,-14.9,76.2,-1.2C74.2,12.5,69.5,24.9,64.5,39.1C59.6,53.3,54.4,69.2,43.6,75.6C32.8,82,16.4,78.9,2.1,75.3C-12.3,71.7,-24.5,67.7,-34.9,61.1C-45.2,54.4,-53.6,45.1,-59.1,34.5C-64.6,23.9,-67.2,11.9,-65.5,1C-63.7,-9.9,-57.6,-19.8,-52.7,-31.4C-47.7,-43,-43.9,-56.3,-35.4,-66.4C-26.8,-76.4,-13.4,-83.3,1.6,-86.1C16.6,-88.8,33.1,-87.4,46,-79.8Z"
+                    transform="translate(100 100) scale(1.1)"
+                  /></svg
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0ea5e9"
+            fill-opacity="1"
+            d="M0,192L48,186.7C96,181,192,171,288,149.3C384,128,480,96,576,106.7C672,117,768,171,864,181.3C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -top-3 opacity-20 lg:-top-12"
+        >
+          <path
+            fill="#0ea5e9"
+            fill-opacity="1"
+            d="M0,192L48,176C96,160,192,128,288,122.7C384,117,480,139,576,154.7C672,171,768,181,864,181.3C960,181,1056,171,1152,170.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute opacity-30 top-0"
+        >
+          <path
+            fill="#0ea5e9"
+            fill-opacity="1"
+            d="M0,128L60,128C120,128,240,128,360,106.7C480,85,600,43,720,42.7C840,43,960,85,1080,96C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div> -->
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Start -->
+    <section id="about" class="bg-primary pb-32 dark:bg-sky-700">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="fill-white dark:fill-dark"
+      >
+        <path
+          fill-opacity="1"
+          d="M0,192L48,192C96,192,192,192,288,160C384,128,480,64,576,48C672,32,768,64,864,106.7C960,149,1056,203,1152,213.3C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container pt-10">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2">
+            <h1
+              class="hAtas mb-5 text-3xl font-semibold text-white underline underline-offset-auto lg:text-4xl"
+            >
+              Tentang Saya
+            </h1>
+            <p
+              class="pNaik mb-5 text-justify leading-5 tracking-tighter text-slate-300 lg:leading-relaxed lg:tracking-normal"
+            >
+              Seorang web developer yang bekerja menggunakan HTML, CSS dan
+              bahasa pemrograman PHP. Serta menggunakan framework Laravel dan
+              Codeigniter dalam membangun website. Memiliki semangat untuk terus
+              belajar dan beradaptasi dengan perkembangan terbaru dalam industri
+              teknologi informasi.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 lg:pl-28">
+            <h1
+              class="hAtas mb-5 text-3xl font-semibold text-white underline underline-offset-auto lg:text-4xl"
+            >
+              Media Sosial
+            </h1>
+            <p
+              class="pNaik text-justify leading-5 tracking-tighter text-slate-300 lg:leading-relaxed lg:tracking-normal"
+            >
+              Berikut beberapa social media yang dapat dihubungi
+            </p>
+            <div class="icnNaik flex flex-wrap">
+              <a
+                href="https://www.instagram.com/_akmdhn/"
+                target="_blank"
+                class="mr-3 mt-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-100 hover:border-white hover:bg-primary hover:text-white"
+              >
+                <svg
+                  class="fill-current"
+                  role="img"
+                  width="20px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://web.facebook.com/karim.madhani.3/"
+                target="_blank"
+                class="mr-3 mt-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-100 hover:border-white hover:bg-primary hover:text-white"
+              >
+                <svg
+                  class="fill-current"
+                  role="img"
+                  width="20px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Facebook</title>
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ahmad-karim-madhani-889866144/"
+                target="_blank"
+                class="mr-3 mt-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-100 hover:border-white hover:bg-primary hover:text-white"
+              >
+                <svg
+                  class="fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/karimmadhani"
+                target="_blank"
+                class="mr-3 mt-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-100 hover:border-white hover:bg-primary hover:text-white"
+              >
+                <svg
+                  class="fill-current"
+                  role="img"
+                  width="20px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Portpfolio Start-->
+    <section id="portofolio" class="bg-slate-200 pb-32 pt-36 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto max-w-xl text-center">
+            <h1 class="hAtas text-base font-semibold text-primary md:text-xl">
+              Portofolio
+              <span
+                class="mb-4 mt-1 block text-3xl font-bold text-black dark:text-white lg:text-4xl"
+              >
+                Project Terbaru</span
+              >
+            </h1>
+            <h2
+              class="mb-5 text-base font-medium leading-relaxed text-secondary dark:text-slate-400"
+            >
+              Berikut merupakan beberapa project terbaru yang saya kerjakan
+            </h2>
+          </div>
+        </div>
+        <div
+          class="ftBawah flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
+        >
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/portofolio/1.png"
+                alt="Sistem Pakar Diagnosa Penyakit Kucing"
+                width="w-full"
+              />
+            </div>
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
+              Sistem Pakar Diagnosa Penyakit Kucing
+            </h3>
+            <p class="text-base font-medium text-secondary dark:text-slate-400">
+              Website sistem pakar berikut merupakan sebuah website yang berguna
+              untuk melakukan diagnosa penyakit kucing. Website ini menggunakan
+              algoritma Forward Chaining dalam proses diagnosanya.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/portofolio/2.png"
+                alt="Sistem Pakar Diagnosa Penyakit Kucing"
+                width="w-full"
+              />
+            </div>
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
+              Sistem Rekomendasi Pemilihan Kamera
+            </h3>
+            <p class="text-base font-medium text-secondary dark:text-slate-400">
+              Website ini digunakan untuk memberikan sebuah rekomendasi kamera
+              berdaasarkan kriteria-keriteria yang di inginkan oleh user.
+              Algoritma Fuzzy Tsukamoto digunakan dalam website ini untuk
+              menghitung seberapa besar nilai dari sebuah kamera berdasarkan
+              kriteria yang diberikan.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/portofolio/3.png"
+                alt="Sistem Pakar Diagnosa Penyakit Kucing"
+                width="w-full"
+              />
+            </div>
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
+              FreeCodeCampe Course
+            </h3>
+            <p class="text-base font-medium text-secondary dark:text-slate-400">
+              Website yang saya gunakan untuk mengasah logikan pemrograman,
+              serta untuk mencari sertifikat.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/portofolio/4.png"
+                alt="Sistem Pakar Diagnosa Penyakit Kucing"
+                width="w-full"
+              />
+            </div>
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
+              Tailwind CSS
+            </h3>
+            <p class="text-base font-medium text-secondary dark:text-slate-400">
+              Sebuah framework css yang saya gunakan untuk merancang UI dari
+              website portofolio saya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portofolio End -->
+
+    <!-- Contanct Start -->
+    <section id="contact" class="bg-white pb-32 dark:bg-dark">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="fill-slate-200 dark:fill-slate-800"
+      >
+        <path
+          fill-opacity="1"
+          d="M0,192L48,192C96,192,192,192,288,160C384,128,480,64,576,48C672,32,768,64,864,106.7C960,149,1056,203,1152,213.3C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto max-w-xl text-center">
+            <h1 class="hAtas text-base font-semibold text-primary md:text-xl">
+              Contact
+              <span
+                class="mb-5 mt-1 block text-3xl font-bold text-black dark:text-white lg:text-4xl"
+                >Hubungi Saya</span
+              >
+            </h1>
+            <h2
+              class="mb-5 text-base font-medium leading-relaxed text-secondary dark:text-slate-400"
+            >
+              Anda dapat menghubungi saya dengan mengisi form berikut
+            </h2>
+          </div>
+        </div>
+        <form class="fmBawah" method="post">
+          <div class="mx-auto w-full lg:w-2/3">
+            <div class="mb-5 w-full px-4">
+              <label for="name" class="text-base font-bold text-primary"
+                >Nama</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full rounded-md bg-slate-200 p-3 text-black focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+              <label for="email" class="text-base font-bold text-primary"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full rounded-md bg-slate-200 p-3 text-black invalid:border-rose-500 invalid:text-rose-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary focus:invalid:border-rose-500 focus:invalid:ring-rose-500"
+              />
+              <label for="pesan" class="text-base font-bold text-primary"
+                >Pesan</label
+              >
+              <textarea
+                type="text"
+                id="pesan"
+                class="h-32 w-full rounded-md bg-slate-200 p-3 text-black focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              ></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button
+                type="submit"
+                class="w-full rounded-full bg-primary py-3 text-white transition duration-300 ease-in-out hover:opacity-75 hover:shadow-lg dark:bg-sky-600"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact end -->
+
+    <!-- Footer Start -->
+    <footer class="bg-12 bg-dark pt-24 dark:bg-slate-800">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div
+            class="mb-12 w-full px-4 text-base font-normal text-slate-200 lg:w-1/3"
+          >
+            <h1 class="mb-5 text-4xl font-bold text-white">AKM</h1>
+            <h3 class="mb-2 text-xl font-bold">Hubungi Saya</h3>
+            <p>karimmadhani3@gmail.com</p>
+            <p>Boyolali, Jawa Tengah, Indonesia</p>
+          </div>
+          <div class="mb-12 w-full px-4 lg:w-1/3">
+            <h3 class="text-semibold mb-5 text-xl text-white">
+              Kategori Tulisan
+            </h3>
+            <ul class="text-slate-200">
+              <li>
+                <a
+                  href="#"
+                  class="mb-2 inline-block text-base transition duration-300 ease-in-out hover:text-primary"
+                  >Programming</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="mb-2 inline-block text-base transition duration-300 ease-in-out hover:text-primary"
+                  >Teknologi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="mb-2 inline-block text-base transition duration-300 ease-in-out hover:text-primary"
+                  >Gaya Hidup</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mb-12 w-full px-4 lg:w-1/3">
+            <h3 class="text-semibold mb-5 text-xl text-white">Tautan</h3>
+            <ul class="text-slate-200">
+              <li>
+                <a
+                  href="#home"
+                  class="mb-2 inline-block text-base transition duration-300 ease-in-out hover:text-primary"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="mb-2 inline-block text-base transition duration-300 ease-in-out hover:text-primary"
+                  >Tentang Saya</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="mb-2 inline-block text-base transition duration-300 ease-in-out hover:text-primary"
+                  >Portofolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mb-2 inline-block text-base transition duration-300 ease-in-out hover:text-primary"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex flex-wrap items-center justify-center">
+            <a
+              href="https://www.instagram.com/_akmdhn/"
+              target="_blank"
+              class="mr-3 mt-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-100 hover:border-white hover:bg-primary hover:text-white"
+            >
+              <svg
+                class="fill-current"
+                role="img"
+                width="20px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://web.facebook.com/karim.madhani.3/"
+              target="_blank"
+              class="mr-3 mt-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-100 hover:border-white hover:bg-primary hover:text-white"
+            >
+              <svg
+                class="fill-current"
+                role="img"
+                width="20px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Facebook</title>
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ahmad-karim-madhani-889866144/"
+              target="_blank"
+              class="mr-3 mt-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-100 hover:border-white hover:bg-primary hover:text-white"
+            >
+              <svg
+                class="fill-current"
+                role="img"
+                viewBox="0 0 24 24"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/karimmadhani"
+              target="_blank"
+              class="mr-3 mt-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-100 hover:border-white hover:bg-primary hover:text-white"
+            >
+              <svg
+                class="fill-current"
+                role="img"
+                width="20px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="text-center text-xs font-normal text-white">
+            Dibuat oleh &copy;
+            <a
+              href="https://www.instagram.com/_akmdhn/"
+              class="font-bold text-teal-500"
+              >Ahmad Karim Madhani</a
+            >
+            dengan menggunakan
+            <a href="https://tailwindcss.com/" class="font-bold text-primary"
+              >Tailwind CSS</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Button Scroll Up Start -->
+    <a
+      href="#home"
+      id="toTop"
+      class="border-1 fixed bottom-5 right-5 z-30 hidden h-10 w-10 items-center justify-center rounded-full border border-solid border-slate-300 bg-teal-500"
+    >
+      <span class="mt-2 block h-3 w-3 rotate-45 border-l-2 border-t-2"></span>
+    </a>
+    <!-- Button Scroll Up End -->
+
+    <!-- scroll animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- end scroll animation -->
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
