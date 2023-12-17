@@ -75,4 +75,4 @@ ScrollReveal().reveal(".hAtas, h2", { origin: "top" });
 ScrollReveal().reveal(".pNaik, .aNaik, .icnNaik, .ftBawah, .fmBawah", {
   origin: "bottom",
 });
-ScrollReveal().reveal(".ftKanan", { origin: "right" });
+ScrollReveal().reveal(".ftKiri", { origin: "left" });
